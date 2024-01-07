@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+img {
+    width: 1000px; /* 横幅は自動調整 */
+  height: 1000px; /* 画像の高さを指定 */
+}
