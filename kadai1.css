@@ -1,6 +1,24 @@
 @charset "UTF-8";
 
-img {
-    width: 1000px; /* 横幅は自動調整 */
-  height: 1000px; /* 画像の高さを指定 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0; /* デフォルトのマージンを削除 */
+
+}
+.conA img {
+
+  width: 20%;
+  margin-bottom: 10px;
+  position: center;
+}
+
+.conA{
+  background-image: url(haikei.png);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
 }
