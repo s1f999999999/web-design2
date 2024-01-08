@@ -37,42 +37,50 @@ body {
 }
 
 
+a {
+  color: black;
+  text-decoration: none; /* リンクの下線を削除 */
+  transition: color 0.3s; /* カラー変化をアニメーション化 */
+}
 
+a:hover {
+  color: white;
+}
 
 .conA img[src="charactor_logo.png"] {
   width: 2000px; /* 例として200pxに設定 */
 }
-
 ul {
   padding: 0;
 }
 
+.red{
+  color: crimson;
+}
 
 ul, ol {
   background: #fcfcfc;/*背景色*/
   border: solid 3px gray;/*線の種類 太さ 色*/
-  list-style: none; /* リストのデフォルトのマーカーを非表示にする */
 }
 
 ul li {
-  background-color: #ccc;
   color: #000;
+  background-color: #ccc;
   font-size: 20px;
   transition: background-color 0.3s, color 0.3s;
   line-height: 1.5; /*文の行高*/
   padding: 0.5em 0; /*前後の文との余白*/
 }
 
-
+hr {
+  border-top: 5px solid #000;
+}
 
 ul li:hover {
     background-color: #333; /* カーソルを合わせたときの背景色 */
     color: #fff;
 }
 
-ul li a:hover {
-  text-decoration: underline; /* カーソルを合わせた時にアンダーラインを追加 */
-}
 
 .otehon img{
   width: 500px;
@@ -124,3 +132,4 @@ ul li a:hover {
     padding: 0 15px; /* 左右のパディングを追加して、余白を持たせる */
   }
 }
+
