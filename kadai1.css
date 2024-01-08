@@ -1,24 +1,47 @@
 @charset "UTF-8";
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0; /* デフォルトのマージンを削除 */
-
-}
-.conA img {
-
-  width: 20%;
-  margin-bottom: 10px;
-  position: center;
+  height: 100vh;
+  margin: 0;
 }
 
-.conA{
+.conA {
   background-image: url(haikei.png);
   background-position: center;
   background-size: cover;
   text-align: center;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* 相対位置指定 */
+}
+
+.charactor_logo {
+  top: 50%; /* 上から50%の位置に配置 */
+  left: 50%; /* 左から50%の位置に配置 */
+  z-index: 1; /* 画像を前面に配置 */
+}
+
+.conA img {
+  max-width: 100%; /* 幅いっぱいに広げる */
+  height: auto;
+}
+
+
+
+
+.conA img[src="charactor_logo.png"] {
+  width: 2000px; /* 例として200pxに設定 */
+}
+
+.otehon img{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column; /* 縦に並ぶように変更 */
+  align-items: center; /* 中央寄せ */
+}
+
+.wakarase img{
+  width: 500px;
 }
