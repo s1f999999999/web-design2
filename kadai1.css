@@ -145,7 +145,7 @@ ul li:hover {
 
 .tooltip {
   position: absolute;
-  top: 100%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.8);
