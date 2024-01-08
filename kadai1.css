@@ -117,7 +117,9 @@ ul li:hover {
 
 .kadai p {
   max-width: 100%; /* 段落の最大幅を100%に設定 */
-  word-wrap: break-word; /* 長い単語を適切に折り返す */
+  word-wrap: break-word;
+  margin-bottom: 40px;
+   /* 長い単語を適切に折り返す */
 }
 
 @media screen and (min-width: 1025px) {
@@ -159,3 +161,35 @@ ul li:hover {
 .wakarase:hover .tooltip {
   opacity: 1;
 }
+
+
+.conB{
+  margin:2em 0;
+  position: relative;
+  padding: 0.5em 1.5em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+.conB:before, .conB:after{
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 20px);
+  background-color: black;
+}
+.conB:before {left: 10px;}
+.conB:after {right: 10px;}
+.conB h1 {
+  margin: 0; 
+  padding: 0;
+}
+
+#posterFrame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160vh;
+}
+
